@@ -1,6 +1,5 @@
 <?php
-namespace App\Http\Controllers\Web;
-// Controller untuk mengelola data pelanggan
+namespace App\Http\Controllers\Web; // Controller untuk mengelola data pelanggan
 
 use App\Http\Controllers\Controller;
 use App\Models\Pelanggan;
