@@ -1,5 +1,4 @@
-<!-- Dashboard utama aplikasi laundry -->
-<!DOCTYPE html>
+<!DOCTYPE html><!-- Dashboard utama aplikasi laundry -->
 <html>
 <head>
     <title>Dashboard Laundry</title>
