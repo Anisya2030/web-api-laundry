@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Web;
+// Controller untuk mengelola data layanan
 
 use App\Http\Controllers\Controller;
 use App\Models\Layanan;
