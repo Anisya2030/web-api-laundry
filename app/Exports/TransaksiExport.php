@@ -1,7 +1,6 @@
 <?php
 
-namespace App\Exports;
-// Controller untuk laporan dan export Excel
+namespace App\Exports;// Controller untuk laporan dan export Excel
 
 use App\Models\Transaksi;
 use Maatwebsite\Excel\Concerns\FromCollection;
