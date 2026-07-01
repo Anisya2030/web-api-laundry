@@ -1,3 +1,4 @@
+<!-- Dashboard utama aplikasi laundry -->
 <!DOCTYPE html>
 <html>
 <head>
