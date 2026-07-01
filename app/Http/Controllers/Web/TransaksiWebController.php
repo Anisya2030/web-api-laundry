@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Web;
+// Controller untuk mengelola data transaksi
 
 use App\Http\Controllers\Controller;
 use App\Models\Transaksi;
