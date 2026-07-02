@@ -1,0 +1,1874 @@
+{
+  "info": {
+    "_postman_id": "7c923f0b-d3ca-4efb-bcbb-04a0f2f3422e",
+    "name": "laravel laundry-api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52924024",
+    "_collection_link": "https://go.postman.co/collection/52924024-7c923f0b-d3ca-4efb-bcbb-04a0f2f3422e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET semua pelanggan",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/pelanggan",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "pelanggan"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "GET semua pelanggan",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/pelanggan",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "pelanggan"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 09:41:30 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "[]"
+        }
+      ]
+    },
+    {
+      "name": "Tambah Pelanggan",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nama\": \"Anisya\",\r\n    \"alamat\": \"Banjarnegara\",\r\n    \"no_hp\": \"08123456789\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/pelanggan",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "pelanggan"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Tambah Pelanggan",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nama\": \"Anisya\",\r\n    \"alamat\": \"Banjarnegara\",\r\n    \"no_hp\": \"08123456789\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/pelanggan",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "pelanggan"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 09:42:26 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Data pelanggan berhasil ditambahkan\",\n    \"data\": {\n        \"nama\": \"Anisya\",\n        \"alamat\": \"Banjarnegara\",\n        \"no_hp\": \"08123456789\",\n        \"updated_at\": \"2026-06-24T09:42:26.000000Z\",\n        \"created_at\": \"2026-06-24T09:42:26.000000Z\",\n        \"id\": 1\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Tambah Pelanggan Lagi",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nama\": \"dadar\",\r\n    \"alamat\": \"karangklesem\",\r\n    \"no_hp\": \"08123457689\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/pelanggan",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "pelanggan"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Tambah Pelanggan Lagi",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nama\": \"dadar\",\r\n    \"alamat\": \"karangklesem\",\r\n    \"no_hp\": \"08123457689\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/pelanggan",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "pelanggan"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 09:44:37 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Data pelanggan berhasil ditambahkan\",\n    \"data\": {\n        \"nama\": \"dadar\",\n        \"alamat\": \"karangklesem\",\n        \"no_hp\": \"08123457689\",\n        \"updated_at\": \"2026-06-24T09:44:37.000000Z\",\n        \"created_at\": \"2026-06-24T09:44:37.000000Z\",\n        \"id\": 2\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Cek Lagi Semua Data",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/pelanggan",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "pelanggan"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Cek Lagi Semua Data",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/pelanggan",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "pelanggan"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 09:45:13 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"nama\": \"Anisya\",\n        \"alamat\": \"Banjarnegara\",\n        \"no_hp\": \"08123456789\",\n        \"created_at\": \"2026-06-24T09:42:26.000000Z\",\n        \"updated_at\": \"2026-06-24T09:42:26.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"nama\": \"dadar\",\n        \"alamat\": \"karangklesem\",\n        \"no_hp\": \"08123457689\",\n        \"created_at\": \"2026-06-24T09:44:37.000000Z\",\n        \"updated_at\": \"2026-06-24T09:44:37.000000Z\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Menampilkan Berdasarkan ID (SHOW)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/pelanggan/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "pelanggan",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Menampilkan Berdasarkan ID (SHOW)",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/pelanggan/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "pelanggan",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 09:48:27 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 1,\n    \"nama\": \"Anisya\",\n    \"alamat\": \"Banjarnegara\",\n    \"no_hp\": \"08123456789\",\n    \"created_at\": \"2026-06-24T09:42:26.000000Z\",\n    \"updated_at\": \"2026-06-24T09:42:26.000000Z\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Mengubah Data (UPDATE)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nama\": \"gulung\",\r\n    \"alamat\": \"Purwokerto\",\r\n    \"no_hp\": \"08987654321\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/pelanggan/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "pelanggan",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Mengubah Data (UPDATE)",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nama\": \"gulung\",\r\n    \"alamat\": \"Purwokerto\",\r\n    \"no_hp\": \"08987654321\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/pelanggan/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "pelanggan",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 09:49:39 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Data pelanggan berhasil diupdate\",\n    \"data\": {\n        \"id\": 1,\n        \"nama\": \"gulung\",\n        \"alamat\": \"Purwokerto\",\n        \"no_hp\": \"08987654321\",\n        \"created_at\": \"2026-06-24T09:42:26.000000Z\",\n        \"updated_at\": \"2026-06-24T09:49:39.000000Z\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Menghapus Data (DELETE)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/pelanggan/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "pelanggan",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Menghapus Data (DELETE)",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/pelanggan/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "pelanggan",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 09:50:31 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Data pelanggan berhasil dihapus\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Menampilkan ulang pelanggan",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/pelanggan",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "pelanggan"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Menampilkan ulang pelanggan",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/pelanggan",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "pelanggan"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 09:51:05 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 2,\n        \"nama\": \"dadar\",\n        \"alamat\": \"karangklesem\",\n        \"no_hp\": \"08123457689\",\n        \"created_at\": \"2026-06-24T09:44:37.000000Z\",\n        \"updated_at\": \"2026-06-24T09:44:37.000000Z\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Tambah Layanan",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nama_layanan\": \"Cuci Setrika\",\r\n    \"harga\": 7000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/layanan",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "layanan"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Tambah Layanan",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nama_layanan\": \"Cuci Setrika\",\r\n    \"harga\": 7000\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/layanan",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "layanan"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 09:53:55 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Data layanan berhasil ditambahkan\",\n    \"data\": {\n        \"nama_layanan\": \"Cuci Setrika\",\n        \"harga\": 7000,\n        \"updated_at\": \"2026-06-24T09:53:55.000000Z\",\n        \"created_at\": \"2026-06-24T09:53:55.000000Z\",\n        \"id\": 1\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Tambah Layanan 2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nama_layanan\": \"Setrika\",\r\n    \"harga\": 3000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/layanan",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "layanan"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Tambah Layanan 2",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nama_layanan\": \"Setrika\",\r\n    \"harga\": 3000\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/layanan",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "layanan"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 10:00:17 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Data layanan berhasil ditambahkan\",\n    \"data\": {\n        \"nama_layanan\": \"Setrika\",\n        \"harga\": 3000,\n        \"updated_at\": \"2026-06-24T10:00:17.000000Z\",\n        \"created_at\": \"2026-06-24T10:00:17.000000Z\",\n        \"id\": 2\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Lihat Semua Layanan",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/layanan",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "layanan"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Lihat Semua Layanan",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/layanan",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "layanan"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 10:01:26 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"nama_layanan\": \"Cuci Setrika\",\n        \"harga\": 7000,\n        \"created_at\": \"2026-06-24T09:53:55.000000Z\",\n        \"updated_at\": \"2026-06-24T09:53:55.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"nama_layanan\": \"Setrika\",\n        \"harga\": 3000,\n        \"created_at\": \"2026-06-24T10:00:17.000000Z\",\n        \"updated_at\": \"2026-06-24T10:00:17.000000Z\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Melihat Layanan Berdasarkan ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/layanan/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "layanan",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Melihat Layanan Berdasarkan ID",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/layanan/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "layanan",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 10:02:41 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 1,\n    \"nama_layanan\": \"Cuci Setrika\",\n    \"harga\": 7000,\n    \"created_at\": \"2026-06-24T09:53:55.000000Z\",\n    \"updated_at\": \"2026-06-24T09:53:55.000000Z\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Mengubah Layanan",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nama_layanan\": \"Cuci Setrika Premium\",\r\n    \"harga\": 10000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/layanan/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "layanan",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Mengubah Layanan",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nama_layanan\": \"Cuci Setrika Premium\",\r\n    \"harga\": 10000\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/layanan/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "layanan",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 10:04:28 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Data layanan berhasil diupdate\",\n    \"data\": {\n        \"id\": 1,\n        \"nama_layanan\": \"Cuci Setrika Premium\",\n        \"harga\": 10000,\n        \"created_at\": \"2026-06-24T09:53:55.000000Z\",\n        \"updated_at\": \"2026-06-24T10:04:28.000000Z\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Menghapus Data Layanan",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/layanan/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "layanan",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Menghapus Data Layanan",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/layanan/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "layanan",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 10:05:24 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Data layanan berhasil dihapus\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Menampilkan ulang layanan",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/layanan",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "layanan"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Menampilkan ulang layanan",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/layanan",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "layanan"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 10:06:12 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 2,\n        \"nama_layanan\": \"Setrika\",\n        \"harga\": 3000,\n        \"created_at\": \"2026-06-24T10:00:17.000000Z\",\n        \"updated_at\": \"2026-06-24T10:00:17.000000Z\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Tambah Transaksi",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"pelanggan_id\": 2,\r\n    \"layanan_id\": 2,\r\n    \"berat_kg\": 2,\r\n    \"total_harga\": 6000,\r\n    \"status\": \"Proses\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/transaksi",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "transaksi"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Tambah Transaksi",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"pelanggan_id\": 2,\r\n    \"layanan_id\": 2,\r\n    \"berat_kg\": 2,\r\n    \"total_harga\": 6000,\r\n    \"status\": \"Proses\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/transaksi",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "transaksi"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 10:12:33 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Data transaksi berhasil ditambahkan\",\n    \"data\": {\n        \"pelanggan_id\": 2,\n        \"layanan_id\": 2,\n        \"berat_kg\": 2,\n        \"total_harga\": 6000,\n        \"status\": \"Proses\",\n        \"updated_at\": \"2026-06-24T10:12:33.000000Z\",\n        \"created_at\": \"2026-06-24T10:12:33.000000Z\",\n        \"id\": 2\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Tampilkan Semua Transaksi",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/transaksi",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "transaksi"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Tampilkan Semua Transaksi",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/transaksi",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "transaksi"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 10:14:30 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"pelanggan_id\": 2,\n        \"layanan_id\": 2,\n        \"berat_kg\": 3,\n        \"total_harga\": 15000,\n        \"status\": \"Proses\",\n        \"created_at\": \"2026-06-24T10:11:16.000000Z\",\n        \"updated_at\": \"2026-06-24T10:11:16.000000Z\",\n        \"pelanggan\": {\n            \"id\": 2,\n            \"nama\": \"dadar\",\n            \"alamat\": \"karangklesem\",\n            \"no_hp\": \"08123457689\",\n            \"created_at\": \"2026-06-24T09:44:37.000000Z\",\n            \"updated_at\": \"2026-06-24T09:44:37.000000Z\"\n        },\n        \"layanan\": {\n            \"id\": 2,\n            \"nama_layanan\": \"Setrika\",\n            \"harga\": 3000,\n            \"created_at\": \"2026-06-24T10:00:17.000000Z\",\n            \"updated_at\": \"2026-06-24T10:00:17.000000Z\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"pelanggan_id\": 2,\n        \"layanan_id\": 2,\n        \"berat_kg\": 2,\n        \"total_harga\": 6000,\n        \"status\": \"Proses\",\n        \"created_at\": \"2026-06-24T10:12:33.000000Z\",\n        \"updated_at\": \"2026-06-24T10:12:33.000000Z\",\n        \"pelanggan\": {\n            \"id\": 2,\n            \"nama\": \"dadar\",\n            \"alamat\": \"karangklesem\",\n            \"no_hp\": \"08123457689\",\n            \"created_at\": \"2026-06-24T09:44:37.000000Z\",\n            \"updated_at\": \"2026-06-24T09:44:37.000000Z\"\n        },\n        \"layanan\": {\n            \"id\": 2,\n            \"nama_layanan\": \"Setrika\",\n            \"harga\": 3000,\n            \"created_at\": \"2026-06-24T10:00:17.000000Z\",\n            \"updated_at\": \"2026-06-24T10:00:17.000000Z\"\n        }\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Tampilkan Transaksi Berdasarkan ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/transaksi/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "transaksi",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Tampilkan Transaksi Berdasarkan ID",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/transaksi/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "transaksi",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 10:15:18 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 1,\n    \"pelanggan_id\": 2,\n    \"layanan_id\": 2,\n    \"berat_kg\": 3,\n    \"total_harga\": 15000,\n    \"status\": \"Proses\",\n    \"created_at\": \"2026-06-24T10:11:16.000000Z\",\n    \"updated_at\": \"2026-06-24T10:11:16.000000Z\",\n    \"pelanggan\": {\n        \"id\": 2,\n        \"nama\": \"dadar\",\n        \"alamat\": \"karangklesem\",\n        \"no_hp\": \"08123457689\",\n        \"created_at\": \"2026-06-24T09:44:37.000000Z\",\n        \"updated_at\": \"2026-06-24T09:44:37.000000Z\"\n    },\n    \"layanan\": {\n        \"id\": 2,\n        \"nama_layanan\": \"Setrika\",\n        \"harga\": 3000,\n        \"created_at\": \"2026-06-24T10:00:17.000000Z\",\n        \"updated_at\": \"2026-06-24T10:00:17.000000Z\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Edit Transaksi",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"pelanggan_id\": 2,\r\n    \"layanan_id\": 2,\r\n    \"berat_kg\": 3,\r\n    \"total_harga\": 9000,\r\n    \"status\": \"Selesai\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/transaksi/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "transaksi",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Edit Transaksi",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"pelanggan_id\": 2,\r\n    \"layanan_id\": 2,\r\n    \"berat_kg\": 3,\r\n    \"total_harga\": 9000,\r\n    \"status\": \"Selesai\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/transaksi/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "transaksi",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 10:18:35 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Data transaksi berhasil diupdate\",\n    \"data\": {\n        \"id\": 1,\n        \"pelanggan_id\": 2,\n        \"layanan_id\": 2,\n        \"berat_kg\": 3,\n        \"total_harga\": 9000,\n        \"status\": \"Selesai\",\n        \"created_at\": \"2026-06-24T10:11:16.000000Z\",\n        \"updated_at\": \"2026-06-24T10:18:35.000000Z\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Hapus Transaksi",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/transaksi/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "transaksi",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Hapus Transaksi",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/transaksi/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "transaksi",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 10:19:23 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Data transaksi berhasil dihapus\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Menampilkan ulang transaksi",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/transaksi",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "transaksi"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Menampilkan ulang transaksi",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/transaksi",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "transaksi"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.4.4"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 10:20:18 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 2,\n        \"pelanggan_id\": 2,\n        \"layanan_id\": 2,\n        \"berat_kg\": 2,\n        \"total_harga\": 6000,\n        \"status\": \"Proses\",\n        \"created_at\": \"2026-06-24T10:12:33.000000Z\",\n        \"updated_at\": \"2026-06-24T10:12:33.000000Z\",\n        \"pelanggan\": {\n            \"id\": 2,\n            \"nama\": \"dadar\",\n            \"alamat\": \"karangklesem\",\n            \"no_hp\": \"08123457689\",\n            \"created_at\": \"2026-06-24T09:44:37.000000Z\",\n            \"updated_at\": \"2026-06-24T09:44:37.000000Z\"\n        },\n        \"layanan\": {\n            \"id\": 2,\n            \"nama_layanan\": \"Setrika\",\n            \"harga\": 3000,\n            \"created_at\": \"2026-06-24T10:00:17.000000Z\",\n            \"updated_at\": \"2026-06-24T10:00:17.000000Z\"\n        }\n    }\n]"
+        }
+      ]
+    }
+  ]
+}
