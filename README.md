@@ -1,60 +1,75 @@
-<p align="center">
-    <h1 align="center">Sistem Informasi Laundry Berbasis Laravel</h1>
-</p>
+# Sistem Informasi Laundry Berbasis Laravel
 
-<p align="center">
-    <img src="https://img.shields.io/badge/Laravel-13-red" alt="Laravel">
-    <img src="https://img.shields.io/badge/PHP-8-blue" alt="PHP">
-    <img src="https://img.shields.io/badge/MySQL-Database-orange" alt="MySQL">
-    <img src="https://img.shields.io/badge/Bootstrap-5-purple" alt="Bootstrap">
-    <img src="https://img.shields.io/badge/REST-API-green" alt="REST API">
-</p>
+## Deskripsi
 
-## Tentang Project
-
-Sistem Informasi Laundry merupakan aplikasi berbasis web yang dikembangkan menggunakan framework Laravel. Aplikasi ini dirancang untuk membantu pengelolaan usaha laundry mulai dari pengelolaan pelanggan, layanan, transaksi, hingga penyusunan laporan pendapatan.
+Sistem Informasi Laundry merupakan aplikasi berbasis web yang dikembangkan menggunakan framework Laravel. Sistem ini bertujuan untuk membantu pengelolaan usaha laundry mulai dari pencatatan pelanggan, layanan, transaksi, hingga penyusunan laporan pendapatan.
 
 Selain aplikasi berbasis web, sistem ini juga menyediakan REST API untuk mendukung pertukaran data dengan aplikasi lain.
+
+---
+
+## Tahapan Pengembangan Project
+
+Tahapan pengembangan sistem dilakukan sebagai berikut:
+
+1. Analisis kebutuhan sistem.
+2. Perancangan database.
+3. Pembuatan migration database.
+4. Pembuatan model.
+5. Pembuatan REST API.
+6. Pengujian API menggunakan Postman.
+7. Pembuatan antarmuka web menggunakan Blade dan Bootstrap.
+8. Implementasi fitur CRUD.
+9. Implementasi dashboard statistik.
+10. Implementasi laporan dan export Excel.
+11. Pengujian keseluruhan sistem.
 
 ---
 
 ## Fitur Sistem
 
 ### Dashboard
-- Menampilkan total pelanggan.
-- Menampilkan total layanan.
-- Menampilkan jumlah transaksi hari ini.
-- Menampilkan pendapatan hari ini.
+Dashboard menampilkan informasi statistik yang terdiri dari:
+
+- Total pelanggan
+- Total layanan
+- Jumlah transaksi hari ini
+- Pendapatan hari ini
 
 ### Manajemen Pelanggan
-- Menambah data pelanggan.
-- Menampilkan data pelanggan.
-- Mengubah data pelanggan.
-- Menghapus data pelanggan.
-- Menampilkan detail pelanggan.
+
+- Menambah data pelanggan
+- Menampilkan data pelanggan
+- Mengubah data pelanggan
+- Menghapus data pelanggan
+- Menampilkan detail pelanggan
 
 ### Manajemen Layanan
-- Menambah data layanan.
-- Menampilkan data layanan.
-- Mengubah data layanan.
-- Menghapus data layanan.
-- Menampilkan detail layanan.
+
+- Menambah data layanan
+- Menampilkan data layanan
+- Mengubah data layanan
+- Menghapus data layanan
+- Menampilkan detail layanan
 
 ### Manajemen Transaksi
-- Menambah transaksi laundry.
-- Menghitung total harga secara otomatis.
-- Mengubah data transaksi.
-- Menghapus data transaksi.
-- Menampilkan detail transaksi.
+
+- Menambah transaksi laundry
+- Menghitung total harga secara otomatis
+- Mengubah data transaksi
+- Menghapus data transaksi
+- Menampilkan detail transaksi
 
 ### Laporan
-- Pendapatan hari ini.
-- Pendapatan minggu ini.
-- Pendapatan bulan ini.
-- Export laporan ke Microsoft Excel.
+
+- Pendapatan hari ini
+- Pendapatan minggu ini
+- Pendapatan bulan ini
+- Export laporan ke Microsoft Excel
 
 ### REST API
-API mendukung operasi:
+
+REST API mendukung operasi:
 
 - GET
 - POST
@@ -63,16 +78,48 @@ API mendukung operasi:
 
 ---
 
+## Struktur Database
+
+Sistem menggunakan tiga tabel utama.
+
+### Tabel Pelanggan
+
+| Field | Tipe |
+|--------|------|
+| id | bigint |
+| nama | varchar |
+| alamat | text |
+| no_hp | varchar |
+
+### Tabel Layanan
+
+| Field | Tipe |
+|--------|------|
+| id | bigint |
+| nama_layanan | varchar |
+| harga | integer |
+
+### Tabel Transaksi
+
+| Field | Tipe |
+|--------|------|
+| id | bigint |
+| pelanggan_id | bigint |
+| layanan_id | bigint |
+| berat_kg | integer |
+| total_harga | integer |
+| status | varchar |
+
+---
+
 ## Teknologi yang Digunakan
 
-| Teknologi | Keterangan |
-|-----------|------------|
-| Laravel 13 | Framework Backend |
-| PHP 8 | Bahasa Pemrograman |
-| MySQL | Database |
-| Bootstrap 5 | User Interface |
-| Postman | Pengujian API |
-| Laravel Excel | Export Laporan |
+- Laravel 13
+- PHP 8
+- MySQL
+- Bootstrap 5
+- Postman
+- Laravel Excel
 
 ---
 
@@ -110,7 +157,35 @@ API mendukung operasi:
 
 ---
 
-## Cara Menjalankan Project
+## Pengujian API
+
+Pengujian REST API dilakukan menggunakan aplikasi Postman.
+
+Metode yang diuji meliputi:
+
+- GET
+- POST
+- PUT
+- DELETE
+
+Hasil pengujian menunjukkan bahwa seluruh endpoint berhasil dijalankan dan menghasilkan response JSON sesuai dengan kebutuhan sistem.
+
+---
+
+## Hasil Implementasi
+
+Berdasarkan hasil pengujian yang telah dilakukan, seluruh fitur aplikasi dapat berjalan dengan baik, meliputi:
+
+- CRUD pelanggan berjalan dengan baik.
+- CRUD layanan berjalan dengan baik.
+- CRUD transaksi berjalan dengan baik.
+- Dashboard statistik berjalan dengan baik.
+- REST API berjalan dengan baik.
+- Export laporan ke Excel berhasil dilakukan.
+
+---
+
+## Cara Menjalankan Aplikasi
 
 ### Clone Repository
 
@@ -118,7 +193,7 @@ API mendukung operasi:
 git clone https://github.com/Anisya2030/web-api-laundry.git
 ```
 
-### Masuk ke Folder Project
+### Masuk ke Direktori Project
 
 ```bash
 cd web-api-laundry
@@ -136,7 +211,7 @@ composer install
 cp .env.example .env
 ```
 
-### Generate Key
+### Generate Application Key
 
 ```bash
 php artisan key:generate
@@ -155,7 +230,7 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### Migrasi Database
+### Jalankan Migrasi Database
 
 ```bash
 php artisan migrate
@@ -177,13 +252,13 @@ http://127.0.0.1:8000
 
 ## Pengembang
 
-**Anisya**  
+Nama : Anisya  
 NIM : 240111018  
-Program Studi Informatika  
-Universitas Harapan Bangsa
+Program Studi : Informatika  
+Universitas : Universitas Harapan Bangsa
 
 ---
 
 ## Lisensi
 
-Project ini dibuat untuk keperluan pembelajaran dan tugas akademik.
+Aplikasi ini dibuat untuk keperluan pembelajaran dan tugas akademik.
