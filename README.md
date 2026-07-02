@@ -172,6 +172,33 @@ Hasil pengujian menunjukkan bahwa seluruh endpoint berhasil dijalankan dan mengh
 
 ---
 
+## Dokumentasi API
+
+Dokumentasi REST API dapat diakses melalui Postman Collection yang tersedia pada repository ini.
+
+File dokumentasi:
+
+```text
+laravel laundry-api.postman_collection.json
+```
+
+Collection tersebut berisi seluruh endpoint REST API yang digunakan pada sistem, meliputi:
+
+- API Pelanggan
+- API Layanan
+- API Transaksi
+
+Metode yang digunakan:
+
+- GET
+- POST
+- PUT
+- DELETE
+
+Collection dapat diimport langsung ke aplikasi Postman untuk melakukan pengujian API.
+
+---
+
 ## Hasil Implementasi
 
 Berdasarkan hasil pengujian yang telah dilakukan, seluruh fitur aplikasi dapat berjalan dengan baik, meliputi:
